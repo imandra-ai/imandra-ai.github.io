@@ -2,7 +2,7 @@
 title: "Imandra Protocol Language"
 excerpt: ""
 layout: docpage
-permalink : /ipl/
+permalink : /imandra-protocol-language/
 ---
 
 The Imandra Protocol Language formalises banking languages such as FIX, SWIFT and IBan.
