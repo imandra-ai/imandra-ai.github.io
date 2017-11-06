@@ -1,5 +1,4 @@
 ---
-title: "Welcome"
 excerpt: ""
 layout: docpage
 ---
