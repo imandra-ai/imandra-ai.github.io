@@ -9,6 +9,12 @@ build:
         name: install custom lexers
         code:
           - cp lib/ipl.rb /usr/local/bundle/gems/rouge-2.2.1/lib/rouge/lexers/ipl.rb
+
+    - script:
+        name: initialize git submodules
+        code: |
+            git submodule update --init --recursive
+
     - script:
         name: jekyll build
         code: jekyll build
