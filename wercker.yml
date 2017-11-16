@@ -16,6 +16,10 @@ build:
             git submodule update --init --recursive
 
     - script:
+        name: create output folder
+        code: mkdir _site
+
+    - script:
         name: jekyll build
         code: jekyll build
 
