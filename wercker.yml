@@ -2,7 +2,9 @@ box: jekyll/jekyll:3.6.2
 
 build:
   steps:
-    - bundle-install
+    - bundle-install:
+        path: /usr/local/bundle
+
     - script:
         name: install custom lexers
         code:
