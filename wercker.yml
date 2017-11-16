@@ -4,7 +4,6 @@ build:
   steps:
     - bundle-install:
         path: /usr/local/bundle
-        frozen: true
 
     - script:
         name: install custom lexers
