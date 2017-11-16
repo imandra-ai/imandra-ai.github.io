@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.imandra.ai" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: VerifiedbyAI
-github_username:  
+github_username: AestheticIntegration
 permalink: /:title/
 
 # Build settings
@@ -35,13 +35,12 @@ kramdown:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - lib
+  - wercker.yml
+  - README.md
 
 #theme: jekyll-theme-slate
