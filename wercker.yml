@@ -28,3 +28,4 @@ deploy:
     - lukevivier/gh-pages@0.2.1:
         basedir: _site
         token: $GITHUB_TOKEN
+        branch: master
