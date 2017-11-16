@@ -1,0 +1,18 @@
+box: jekyll/jekyll:3.6.2
+
+build:
+  steps:
+    - bundle-install
+    - script:
+        name: install custom lexers
+        code:
+          - cp lib/ipl.rb /usr/local/bundle/gems/rouge-2.2.1/lib/rouge/lexers/ipl.rb
+    - script:
+        name: jekyll build
+        code: jekyll build
+
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        domain: docs.imandra.ai
+        basedir: _site
