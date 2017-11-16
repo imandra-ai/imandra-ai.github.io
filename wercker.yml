@@ -25,7 +25,7 @@ build:
 
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
+    - hijonathan/gh-pages@0.2.3:
         basedir: _site
         token: $GITHUB_TOKEN
         branch: master
