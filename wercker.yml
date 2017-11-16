@@ -23,6 +23,10 @@ build:
         name: jekyll build
         code: jekyll build
 
+    - script:
+        name: copy public README
+        code: cp README.public.md _site/README.md
+
 deploy:
   steps:
     - hijonathan/gh-pages@0.2.3:

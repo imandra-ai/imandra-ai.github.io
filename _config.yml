@@ -42,5 +42,6 @@ exclude:
   - lib
   - wercker.yml
   - README.md
+  - README.public.md
 
 #theme: jekyll-theme-slate
