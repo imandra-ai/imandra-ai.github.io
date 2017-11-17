@@ -39,7 +39,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Dockerfile
-  - lib
   - wercker.yml
   - README.md
   - README.public.md
