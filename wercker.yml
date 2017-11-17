@@ -13,7 +13,7 @@ build:
     - script:
         name: install custom lexers
         code:
-          - cp jekyll-resources/rouge-lexers/ipl.rb /usr/local/bundle/gems/rouge-2.2.1/lib/rouge/lexers/ipl.rb
+          - cp lib/ipl.rb /usr/local/bundle/gems/rouge-2.2.1/lib/rouge/lexers/ipl.rb
 
     - script:
         name: create output folder
