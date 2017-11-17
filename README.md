@@ -1,7 +1,3 @@
-Generate via docker with:
+## Jekyll site generation
 
-    docker build -t ai-gh . && docker run --rm -v `pwd`:/srv/jekyll ai-gh
-
-Generate and serve on port 4000:
-
-    docker build -t ai-gh . && docker run --rm -v `pwd`:/srv/jekyll -p 4000:4000 ai-gh jekyll serve
+To generate the site locally, run `./serve` in the root directory of this repo. The site will then appear at `http://127.0.0.1:4000/`.
