@@ -28,7 +28,6 @@ layouts_dir: jekyll-resources/_layouts
 includes_dir: jekyll-resources/_includes
 sass:
   sass_dir: jekyll-resources/_sass
-include: ['_pages']
 kramdown:
   input: GFM
 
@@ -44,3 +43,14 @@ exclude:
   - README.public.md
 
 #theme: jekyll-theme-slate
+
+collections:
+  technology:
+    output: true
+    sequence: 1
+  products:
+    output: true
+    sequence: 0
+  models:
+    output: true
+    sequence: 2
