@@ -2,5 +2,9 @@
 excerpt: ""
 layout: welcomepage
 ---
+{% raw %}
+<div class="WelcomeExcerpt">
+        <p>This page lists documentations for products, technology and models created by </p> <a href="https://www.imandra.ai"><p class="WelcomeAILink">Aesthetic Integration.</p></a>
 
-This page lists documentation for all languages and services provided by Aesthetic Integration.
+</div>
+{% endraw %}
