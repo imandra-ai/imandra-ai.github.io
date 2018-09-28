@@ -1,29 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 viewBox="0 0 72 72">
-<style type="text/css">
-	.st0{fill:url(#Fill-27-Copy-4_1_);}
-	.st1{fill:#27D798;}
-</style>
-<title>Group Copy</title>
-<desc>Created with Sketch.</desc>
-<g id="Page-1">
-	<g id="Desktop-HD" transform="translate(-305.000000, -1385.000000)">
-		<g id="Group-Copy" transform="translate(305.000000, 1384.827852)">
-			<g id="Group-6-Copy-3" transform="translate(51.125102, 0.590441)">
-				
-					<linearGradient id="Fill-27-Copy-4_1_" gradientUnits="userSpaceOnUse" x1="-688.0388" y1="449.1394" x2="-687.4277" y2="449.1394" gradientTransform="matrix(63.4063 0 0 -67.6419 43598.9648 30416.6934)">
-					<stop  offset="0" style="stop-color:#394D7C"/>
-					<stop  offset="0.4752" style="stop-color:#53A0FE"/>
-					<stop  offset="1" style="stop-color:#069EEA"/>
-				</linearGradient>
-				<polygon id="Fill-27-Copy-4" class="st0" points="-1.4,2.2 -23.9,34.6 -32,22 -39.2,29.6 -25.2,48.5 -23,48.5 0.5,17.1 
-					0.5,60.7 -7.2,60.7 -7.2,69.9 18.5,69.9 18.5,60.7 10.5,60.7 10.5,11.6 18.6,11.6 18.6,2.2 				"/>
-				<path id="Fill-29-Copy-4" class="st1" d="M-36.6,2.2c-3.1,0-6,2-6,5.9l0,0c0,4,2.9,6.1,6,6.1l0,0c3.1,0,6-2.1,6-5.9l0,0
-					C-30.7,4.4-33.5,2.2-36.6,2.2L-36.6,2.2z M-48.8,22v8.4h7.2v30.9H-49V70h24v-8.6h-7V22H-48.8z"/>
-			</g>
-		</g>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="133px" viewBox="0 0 137 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="85%" x2="100%" y2="15%" id="linearGradient-1">
+            <stop stop-color="#912E40" offset="0%"></stop>
+            <stop stop-color="#D78747" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="16.0638931%" y1="17.1296148%" x2="64.6831594%" y2="88.2749631%" id="linearGradient-2">
+            <stop stop-color="#15CCCC" offset="0%"></stop>
+            <stop stop-color="#325EC6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="docs-new-design" transform="translate(-188.000000, -61.000000)">
+            <g id="Group-2" transform="translate(188.000000, 60.910156)">
+                <g id="ai_dc" transform="translate(0.301304, 0.790670)" stroke="#D6EDE9" stroke-dasharray="3,4" stroke-linecap="square">
+                    <path d="M10.1305154,20.8812665 L121.033529,20.8812665" id="Line"></path>
+                    <path d="M0,32.1456502 L136.975483,32.1456502" id="Line-Copy-2"></path>
+                    <path d="M0,111.635741 L119.355428,111.635741" id="Line-Copy-2-Copy"></path>
+                    <path d="M32.045489,100.596083 L132.780232,100.596083" id="Line-Copy-3"></path>
+                    <path d="M2.72744995,73.8080411 L62.3000145,73.8080411" id="Line-Copy-6"></path>
+                    <path d="M13.8503719,85.7992634 L87.4715207,85.7992634" id="Line-Copy-8"></path>
+                    <path d="M72.3608246,0.206745213 L72.3608246,120.33973" id="Line-Copy-4"></path>
+                    <path d="M80.4238879,5.99561118 L80.4238879,132.110191" id="Line-Copy-7"></path>
+                    <path d="M20.2610309,15.505891 L20.2610309,38.6975127" id="Line-Copy-5"></path>
+                    <path d="M47.3446538,2.68768777 L47.3446538,48.9986155" id="Line-Copy-9"></path>
+                </g>
+                <g id="ai" transform="translate(19.735354, 21.051701)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                    <polygon id="i-letter" points="60.7410775 80.0176658 60.7410775 91.3910751 85.4782431 91.3910751 85.4782431 59.4070607 85.4782431 0.403799244 61.0254125 0.403799244 61.0254125 11.7772088 73.2518278 11.7772088 73.2518278 80.0176658"></polygon>
+                    <polyline id="a-letter" points="43.3966278 80.0176658 17.237786 11.7772088 27.7581897 11.7772088 27.7581897 0.403799244 0.177671667 0.403799244 19.5124678 53.2901536 4.44270025 53.2901536 4.44270025 65.5165685 24.0618317 65.5165685 29.1798659 80.0176658 19.2281326 80.0176658 19.2281326 91.3910751 53.0640261 91.3910751 53.0640261 80.0176658 43.3966278 80.0176658"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
