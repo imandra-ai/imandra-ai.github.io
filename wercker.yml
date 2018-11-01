@@ -10,7 +10,7 @@ build:
           bundle install
           cp jekyll-resources/rouge-lexers/ipl.rb /usr/local/bundle/gems/rouge-2.2.1/lib/rouge/lexers/ipl.rb
           mkdir _site
-          jekyll build
+          JEKYLL_ENV=production jekyll build
 
 deploy:
   steps:
