@@ -1,4 +1,4 @@
-# Imandra Inc documentation
+# Imandra Inc. documentation
 
 See: https://docs.imandra.ai
 
