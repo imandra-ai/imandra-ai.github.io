@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,10 +12,10 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i%7CMerriweather:300,300i,400,400i%7CRoboto+Slab:300,300i,400,400i">
       <link rel="canonical" href="https://docs.imandra.ai/">
     
-	  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-	  <script type="text/javascript" src="/jekyll-resources/assets/js/copyFunctions.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	  <script src="/jekyll-resources/assets/js/copyFunctions.js"></script>
       <script src="https://kit.fontawesome.com/4d352d3410.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,8 +35,8 @@
 
             <div class="side__logo-container">
                 <a class="side__logo-link" href="https://docs.imandra.ai">
-                    <img class="side__logo " src="/jekyll-resources/assets/img/imandra-gradient-logo-docs.svg">
-                    <img class="side__logo--min " src="/jekyll-resources/assets/img/imandra-gradient-logo-min.svg">
+                    <img class="side__logo " src="/jekyll-resources/assets/img/imandra-gradient-logo-docs.svg" alt="Imandra Logo">
+                    <img class="side__logo--min " src="/jekyll-resources/assets/img/imandra-gradient-logo-min.svg" alt="Imandra Logo">
                 </a>
             </div>
 
@@ -127,7 +127,7 @@
 
                     </nav>
     
-                     <section class="page-nav-menu-container" hidden>
+                     <div class="page-nav-menu-container" hidden>
                             <div class="page-nav-menu__arrow" hidden></div>
                             <nav class="page-nav-menu">
                     
@@ -1424,7 +1424,7 @@
                 
                                 </ul>
                             </nav>
-                    </section>
+                    </div>
 
 
 
@@ -1439,7 +1439,7 @@
 
     <section class="page-nav-mobile-menu-container" hidden>
 
-        <nav role="menu" class="page-nav-menu">
+        <nav class="page-nav-menu">
 
             <button aria-haspopup="true" aria-expanded="false" class="page-header-menu-nav__button type--nav-close">
                 <svg version="1.1" class="page-header-menu-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -2990,7 +2990,7 @@
 
         <a class="intro__repository" href="imandra-docs">
             <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-imandra.svg ">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-imandra.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">Imandra Documentation</h3>
             </div>
             <div class="intro__repository-info-container">
@@ -3006,7 +3006,7 @@
 
         <a class="intro__repository" href="ipl">
             <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-ipl.svg ">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-ipl.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">Imandra Protocol Language</h3>
             </div>
             <div class="intro__repository-info-container">
@@ -3017,7 +3017,7 @@
 
         <a class="intro__repository" href="idf-py">
             <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-pyidf.svg ">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-pyidf.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">Python IDF Interface</h3>
             </div>
             <div class="intro__repository-info-container">
@@ -3028,7 +3028,7 @@
 
         <a class="intro__repository" href="imandra-rule-synth">
             <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-rule-synth.svg ">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-rule-synth.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">Imandra Rule Synth</h3>
             </div>
             <div class="intro__repository-info-container">
@@ -3045,7 +3045,7 @@
     <div class="intro__repositories">
         <a class="intro__repository" href="fix-engine">
             <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-fix-engine.svg ">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-fix-engine.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">FIX Engine</h3>
             </div>
             <div class="intro__repository-info-container">
@@ -3060,11 +3060,10 @@
             </div>
         </article>
     </main>
-    </script>
-<footer class="footer">
+    <footer class="footer">
 	<a class="copyrights" href="http://imandra.ai">&#9400; 2021 Imandra Inc. All rights reserved.</a>
 </footer>
-<script type="text/javascript"> docsearch({
+<script> docsearch({
      apiKey: 'ff3a61a82b58783e62ebfbf51e50b0bc',
      indexName: 'imandra',
      inputSelector: '#search',
@@ -3073,8 +3072,7 @@
 </script>
 
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116937440-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116937440-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,10 +12,10 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i%7CMerriweather:300,300i,400,400i%7CRoboto+Slab:300,300i,400,400i">
       <link rel="canonical" href="https://docs.imandra.ai/404/">
     
-	  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-	  <script type="text/javascript" src="/jekyll-resources/assets/js/copyFunctions.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	  <script src="/jekyll-resources/assets/js/copyFunctions.js"></script>
       <script src="https://kit.fontawesome.com/4d352d3410.js" crossorigin="anonymous"></script>
 </head>
 
@@ -135,9 +135,9 @@
 
                     </nav>
     
-                        <section class="page-nav-menu-container" hidden>
+                        <div class="page-nav-menu-container" hidden>
                             <div aria-hidden="true" class="page-nav-menu__arrow" hidden></div>
-                            <nav role="menu" class="page-nav-menu">
+                            <nav class="page-nav-menu">
                     
                                 <ul class="page-nav-menu__list">
 
@@ -1433,7 +1433,7 @@
                                 </ul>
 
                             </nav>
-                        </section>
+                        </div>
 
                 </div>
 
@@ -1446,7 +1446,7 @@
     </div>
 
     <section class="page-nav-mobile-menu-container" hidden>
-        <nav role="menu" class="page-nav-menu">
+        <nav class="page-nav-menu">
 
             <button aria-haspopup="true" aria-expanded="false" class="page-header-menu-nav__button type--nav-close">
                 <svg version="1.1" class="page-header-menu-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -2759,10 +2759,10 @@
             </ul>
 
         </nav>
-    </section>
+ </section>
 
 
-    <script>
+<script>
     document.getElementById('toggler--left').addEventListener('click', function () {
         document.querySelector('.side__right-menu-toggler .side__toggle').classList.remove(
             'side__toggle--active');
@@ -2982,54 +2982,54 @@
 </script>
 
 
-    <script type="text/javascript">
-        window.onload = function () {
-            var lastId,
-                sideMenu = $("#side-nav-menu"),
-                topMenu = $("#top-menu")
-            var topMenuHeight = topMenu.outerHeight() + 15,
-                // All list items
-                menuItems = sideMenu.find('a[href^="#"]'),
-                // Anchors corresponding to menu items
-                scrollItems = menuItems.map(function () {
-                    var item = $(this).attr("href");
-                    var thisItem = item.substring(item.lastIndexOf("/") + 1, item.length)
-                    var linkedItem = $(thisItem)
-                    if (linkedItem.length) {
-                        return linkedItem;
-                    }
-                });
-
-            // Bind to scroll
-            $(window).scroll(function () {
-                // Get container scroll position
-                var fromTop = $(this).scrollTop() + topMenuHeight;;
-
-                // Get id of current scroll item
-                var cur = scrollItems.map(function () {
-                    if ($(this).offset().top < fromTop)
-                        return this;
-                });
-                cur = cur[cur.length - 1];
-
-                // Get the id of the current element
-
-                var id = cur && cur.length ? cur[0].id : "";
-
-                if (lastId != id) {
-
-                    // Set/remove active class
-                    if (lastId != null) {
-                        thisMenuItem = menuItems.filter('a[href^="#' + lastId + '"]')
-                        $(thisMenuItem).removeClass("side__nav-link--within-page--active")
-                    }
-                    lastId = id;
-                    if (id != "") menuItems.filter('a[href^="#' + id + '"]').addClass("side__nav-link--within-page--active");
+<script>
+    window.onload = function () {
+        var lastId,
+            sideMenu = $("#side-nav-menu"),
+            topMenu = $("#top-menu")
+        var topMenuHeight = topMenu.outerHeight() + 15,
+            // All list items
+            menuItems = sideMenu.find('a[href^="#"]'),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function () {
+                var item = $(this).attr("href");
+                var thisItem = item.substring(item.lastIndexOf("/") + 1, item.length)
+                var linkedItem = $(thisItem)
+                if (linkedItem.length) {
+                    return linkedItem;
                 }
-
             });
-        }
-    </script>
+
+        // Bind to scroll
+        $(window).scroll(function () {
+            // Get container scroll position
+            var fromTop = $(this).scrollTop() + topMenuHeight;;
+
+            // Get id of current scroll item
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop)
+                    return this;
+            });
+            cur = cur[cur.length - 1];
+
+            // Get the id of the current element
+
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId != id) {
+
+                // Set/remove active class
+                if (lastId != null) {
+                    thisMenuItem = menuItems.filter('a[href^="#' + lastId + '"]')
+                    $(thisMenuItem).removeClass("side__nav-link--within-page--active")
+                }
+                lastId = id;
+                if (id != "") menuItems.filter('a[href^="#' + id + '"]').addClass("side__nav-link--within-page--active");
+            }
+
+        });
+    }
+</script>
 
 </header>
     <main class="main-content-column">
@@ -3057,11 +3057,10 @@
 
         </article>
     </main>
-    </script>
-<footer class="footer">
+    <footer class="footer">
 	<a class="copyrights" href="http://imandra.ai">&#9400; 2021 Imandra Inc. All rights reserved.</a>
 </footer>
-<script type="text/javascript"> docsearch({
+<script> docsearch({
      apiKey: 'ff3a61a82b58783e62ebfbf51e50b0bc',
      indexName: 'imandra',
      inputSelector: '#search',
@@ -3070,8 +3069,7 @@
 </script>
 
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116937440-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116937440-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
