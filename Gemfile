@@ -1,2 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', '~> 3.6.2'
+gem "ffi", "< 1.17.0"
+group :jekyll_plugins do
+  gem 'github-pages'
+  gem "jekyll-theme-slate"
+end
