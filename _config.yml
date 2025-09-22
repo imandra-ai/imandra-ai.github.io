@@ -41,6 +41,7 @@ exclude:
   - Dockerfile
   - wercker.yml
   - README.md
+  - Gemfile.lock
   - README.public.md
 
 #theme: jekyll-theme-slate
