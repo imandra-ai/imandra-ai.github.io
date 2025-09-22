@@ -1,8 +1,8 @@
-FROM jekyll/jekyll:3.6.2
+FROM jekyll/jekyll:3.8
 
 ADD Gemfile .
 ADD Gemfile.lock .
 
 RUN bundle install
 
-CMD jekyll build
+CMD ["jekyll", "build"]
