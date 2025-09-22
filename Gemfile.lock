@@ -258,7 +258,6 @@ PLATFORMS
 DEPENDENCIES
   ffi (< 1.17.0)
   github-pages
-  webrick (~> 1.7)
 
 BUNDLED WITH
    2.0.2
