@@ -74,19 +74,6 @@
      <header>
   <div class="top-row-container">
     <div class="top-row">
-      <div
-        id="toggler--left"
-        class="side__left-menu-toggler"
-        onclick="toggleNavigation()"
-      >
-        <div class="side__toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <p class="side__toggle-text">Docs</p>
-      </div>
-
       <div class="side__logo-container">
         <a class="side__logo-link" href="https://docs.imandra.ai">
           <img
@@ -103,128 +90,9 @@
       </div>
 
       <div id="flex-space-helper"></div>
-
-      <nav class="side__nav-container side__nav-container--hidden">
-        <ul class="side__nav-list">
-          
-          <li class="side__nav-list-item">
-            
-            <a
-              class="side__nav-link side__nav-link--active"
-              href="/"
-              >Documentation Home</a
-            >
-            
-          </li>
-          
-          <li class="side__nav-list-item">
-            
-            <a class="side__nav-link" href="/imandrax"
-              >ImandraX</a
-            >
-            
-          </li>
-          
-          <li class="side__nav-list-item">
-            
-            <a class="side__nav-link" href="/universe"
-              >Imandra Universe</a
-            >
-            
-          </li>
-          
-          <li class="side__nav-list-item">
-            
-            <a class="side__nav-link" href="/ipl"
-              >Imandra Protocol Language</a
-            >
-            
-          </li>
-          
-          <li class="side__nav-list-item">
-            
-            <a class="side__nav-link" href="/imandra-rule-synth"
-              >Imandra Rule Synth</a
-            >
-            
-          </li>
-          
-        </ul>
-      </nav>
     </div>
   </div>
 
-  <div class="template-header">
-    <div class="top-bar">
-      <nav class="top-bar__nav-container" id="top-menu">
-        <div class="page-header-nav-container">
-          <div class="side__nav-search">
-            <div class="side__nav-search-icon">
-              <i class="fa fa-search"></i>
-            </div>
-            <input id="search" type="search" placeholder="Search" />
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-  <div class="page-nav-mobile-menu-container" hidden>
-    <nav class="page-nav-menu">
-      <button
-        aria-haspopup="true"
-        aria-expanded="false"
-        class="page-header-menu-nav__button type--nav-close"
-      >
-        <svg
-          version="1.1"
-          class="page-header-menu-nav__icon"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 32 32"
-          style="enable-background: new 0 0 32 32"
-          xml:space="preserve"
-        >
-          <rect
-            class="page-header-menu-nav__icon-path--close"
-            x="14"
-            y="0.5"
-            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.981 16.1464)"
-            width="4"
-            height="32"
-          />
-          <rect
-            class="page-header-menu-nav__icon-path--close"
-            x=" 0"
-            y="14.5"
-            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.981 16.1464)"
-            width="32"
-            height="4"
-          />
-        </svg>
-      </button>
-    </nav>
-  </div>
-
-  <script>
-    function toggleNavigation() {
-      // Toggle the hamburger menu animation
-      const toggleButton = document.querySelector(
-        ".side__left-menu-toggler .side__toggle"
-      );
-      if (toggleButton) {
-        toggleButton.classList.toggle("side__toggle--active");
-      }
-
-      // Toggle the navigation visibility
-      const navContainer = document.querySelector(".side__nav-container");
-      if (navContainer) {
-        navContainer.classList.toggle("side__nav-container--hidden");
-      }
-    }
-  </script>
 </header>
 
     <main class="main-content-column">
@@ -242,10 +110,9 @@
 
     </div>
 
-    <h2 class="intro__title">Imandra Documentation</h2>
     <div class="intro__repositories">
 
-        <a class="intro__repository" href="imandrax">
+        <a class="intro__repository" href="https://www.imandrax.dev">
             <div class="intro__repository-brand-container">
                 <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-imandra-x.svg " alt="Repository Icon">
                 <h3 class="intro__repository-title">ImandraX</h3>
@@ -256,58 +123,17 @@
             </div>
         </a>
 
+        <a class="intro__repository" href="https://www.codelogician.dev">
+            <div class="intro__repository-brand-container">
+                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-codelogician.svg " alt="Repository Icon">
+                <h3 class="intro__repository-title">CodeLogician</h3>
+            </div>
+            <div class="intro__repository-info-container">
+                <p class="intro__repository-excerpt">CodeLogician makes AI coding agents structure their reasoning in logic and uses a dedicated reasoning engine to systematically analyze what the code can actually do. So you catch edge cases, surface hidden behaviors, and ship with confidence instead of guesswork.</p>
+                <p class="intro__repository-link">Learn more -&gt;</p>
+            </div>
+        </a>
     </div>
-
-    <h2 class="intro__title">Languages and interfaces</h2>
-    <div class="intro__repositories">
-
-        <a class="intro__repository" href="universe">
-            <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-imandra-universe.svg " alt="Repository Icon">
-                <h3 class="intro__repository-title">Imandra Universe</h3>
-            </div>
-            <div class="intro__repository-info-container">
-                <p class="intro__repository-excerpt">Imandra Universe is a platform which gives you API access to formal reasoning tools and agents.</p>
-                <p class="intro__repository-link">Learn more -&gt;</p>
-            </div>
-        </a>
-
-        <a class="intro__repository" href="https://pypi.org/project/imandra/">
-            <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-python.svg " alt="Repository Icon">
-                <h3 class="intro__repository-title">Python Client</h3>
-            </div>
-            <div class="intro__repository-info-container">
-                <p class="intro__repository-excerpt">Our python library which gives you programmatic access to Imandra's web interfaces.</p>
-                <p class="intro__repository-link">Learn more -&gt;</p>
-            </div>
-        </a>
-
-        <a class="intro__repository" href="ipl">
-            <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-ipl.svg " alt="Repository Icon">
-                <h3 class="intro__repository-title">Imandra Protocol Language</h3>
-            </div>
-            <div class="intro__repository-info-container">
-                <p class="intro__repository-excerpt">The Imandra Protocol Language formalises banking languages such as FIX, SWIFT and IBan.</p>
-                <p class="intro__repository-link">Learn more -&gt;</p>
-            </div>
-        </a>
-
-        <a class="intro__repository" href="imandra-rule-synth">
-            <div class="intro__repository-brand-container">
-                <img class="intro__repository-icon" src=" https://docs.imandra.ai/jekyll-resources/assets/img/icon-docs-rule-synth.svg " alt="Repository Icon">
-                <h3 class="intro__repository-title">Imandra Rule Synth</h3>
-            </div>
-            <div class="intro__repository-info-container">
-                <p class="intro__repository-excerpt">Imandra Rule Synth is an API for synthesizing rules from log files.</p>
-                <p class="intro__repository-link">Learn more -&gt;</p>
-            </div>
-        </a>
-
-    </div>
-
-
 </div>
 </div>
       </article>

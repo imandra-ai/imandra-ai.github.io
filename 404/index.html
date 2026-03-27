@@ -75,19 +75,6 @@
      <header class="header">
   <div class="top-row-container">
     <div class="top-row">
-      <div 
-        id="toggler--left" 
-        class="side__left-menu-toggler" 
-        onclick="toggleNavigation()"
-      >
-        <div class="side__toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <p class="side__toggle-text">Docs</p>
-      </div>
-
       <div class="side__logo-container">
         <a class="side__logo-link" href="https://docs.imandra.ai">
           <img
@@ -104,137 +91,9 @@
       </div>
 
       <div id="flex-space-helper"></div>
-
-        <nav class="side__nav-container side__nav-container--hidden">
-            <ul class="side__nav-list" id="side-nav-menu">
-                
-                
-                <li class="side__nav-list-item">
-                    
-                        <a class="side__nav-link" href="/">Documentation Home</a>
-                </li>
-                
-                
-                <li class="side__nav-list-item">
-                    
-                        <a class="side__nav-link" href="/imandrax">ImandraX</a>
-                </li>
-                
-                
-                <li class="side__nav-list-item">
-                    
-                        <a class="side__nav-link" href="/universe">Imandra Universe</a>
-                </li>
-                
-                
-                <li class="side__nav-list-item">
-                    
-                        <a class="side__nav-link" href="/ipl">Imandra Protocol Language</a>
-                </li>
-                
-                
-                <li class="side__nav-list-item">
-                    
-                        <a class="side__nav-link" href="/imandra-rule-synth">Imandra Rule Synth</a>
-                </li>
-                
-                
-            </ul>
-        </nav>
     </div>
   </div>
 
-  <div class="template-header">
-    <div class="top-bar">
-      <nav class="top-bar__nav-container" id="top-menu">
-        <div class="page-header-nav-container">
-          <div class="side__nav-search">
-            <div class="side__nav-search-icon">
-              <i class="fa fa-search"></i>
-            </div>
-            <input id="search" type="search" placeholder="Search" />
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-  <script>
-    function toggleNavigation() {
-      // Toggle the hamburger menu animation
-      const toggleButton = document.querySelector(
-        ".side__left-menu-toggler .side__toggle"
-      );
-      if (toggleButton) {
-        toggleButton.classList.toggle("side__toggle--active");
-      }
-
-      // Toggle the navigation visibility
-      const navContainer = document.querySelector(".side__nav-container");
-      if (navContainer) {
-        navContainer.classList.toggle("side__nav-container--hidden");
-      }
-    }
-  </script>
-
-  <script>
-    window.onload = function () {
-      var lastId,
-        sideMenu = $("#side-nav-menu"),
-        topMenu = $("#top-menu");
-      var topMenuHeight = topMenu.outerHeight() + 15,
-        // All list items
-        menuItems = sideMenu.find(
-          'a[href^="#"]'
-        ),
-        // Anchors corresponding to menu items
-        scrollItems = menuItems.map(function () {
-          var item = $(this).attr("href");
-          var thisItem = item.substring(item.lastIndexOf("/") + 1, item.length);
-          var linkedItem = $(thisItem);
-          if (linkedItem.length) {
-            return linkedItem;
-          }
-        });
-
-      // Bind to scroll
-      $(window).scroll(function () {
-        // Get container scroll position
-        var fromTop = $(this).scrollTop() + topMenuHeight;
-
-        // Get id of current scroll item
-        var cur = scrollItems.map(function () {
-          if ($(this).offset().top < fromTop) return this;
-        });
-        cur = cur[cur.length - 1];
-
-        // Get the id of the current element
-
-        var id = cur && cur.length ? cur[0].id : "";
-
-        if (lastId != id) {
-          // Set/remove active class
-          if (lastId != null) {
-            thisMenuItem = menuItems.filter(
-              'a[href^="#' +
-                lastId +
-                '"]'
-            );
-            $(thisMenuItem).removeClass("side__nav-link--within-page--active");
-          }
-          lastId = id;
-          if (id != "")
-            menuItems
-              .filter(
-                'a[href^="#' +
-                  id +
-                  '"]'
-              )
-              .addClass("side__nav-link--within-page--active");
-        }
-      });
-    };
-  </script>
 </header>
 
     <main class="main-content-column">
